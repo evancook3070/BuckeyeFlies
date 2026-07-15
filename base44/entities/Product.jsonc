@@ -1,0 +1,53 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Dry Fly",
+        "Nymph",
+        "Streamer",
+        "Emerger",
+        "Terrestrial"
+      ]
+    },
+    "pattern_type": {
+      "type": "string"
+    },
+    "hook_size": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "materials": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "price",
+    "category"
+  ]
+}
